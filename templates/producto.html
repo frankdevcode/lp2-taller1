@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Producto: {{producto.nombre}}</title>
+</head>
+<body>
+  <img src="{{ url_for('static', filename='') }}{{ producto.nombre }}.jpg" alt="{{ producto.nombre }}">'
+  <h3>Nombre: {{ producto.nombre }}</h3>
+  <h3>Precio: {{ producto.precio }}</h3>
+  <br>
+  <button><a href="{{ url_for('index') }}">Volver</a></button>
+</body>
+</html>
